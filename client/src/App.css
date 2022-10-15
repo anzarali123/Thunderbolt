@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* #aed6dc
+#ff9a8d
+#4a536b */
+
+.App {
+    min-height: 100vh;
+    /* background-color: #aed6dc; */
+    display: flex;
+}
