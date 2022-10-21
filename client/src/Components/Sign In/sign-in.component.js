@@ -3,6 +3,7 @@ import { Input, InputGroup, InputRightElement, Button } from "@chakra-ui/react";
 import { VStack } from "@chakra-ui/layout";
 import { useToast } from "@chakra-ui/react";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [show, setShow] = useState(false);
@@ -11,6 +12,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const handleClick = () => setShow(!show);
+  const navigate = useNavigate();
 
   const submitHandler = async (event) => {
     setLoading(true);
@@ -51,6 +53,7 @@ const SignIn = () => {
           isClosable: true,
           position: "bottom",
         });
+        navigate("/chats");
       }
       setLoading(false);
     } catch (error) {

@@ -115,6 +115,7 @@ const SignUp = () => {
             position: "bottom",
           });
           localStorage.setItem("userInfo", JSON.stringify(data));
+          navigate("/chats");
         }
       })
       .catch((error) => {
